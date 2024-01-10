@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Chipotle salad",
+    "description": "harissa roasted cauliflower with houmous, pickled veg",
+    "category": "Salads",
+    "kal": "213",
+    "price": "18.50",
+    "image": "image1.png"
+  },
+  {
+    "id": 1,
+    "name": "Chipotle salad",
+    "description": "harissa roasted cauliflower with houmous, pickled veg",
+    "category": "Gym food",
+    "kal": "213",
+    "price": "18.50",
+    "image": "image1.png"
+  },
+  {
+    "id": 1,
+    "name": "Chipotle salad",
+    "description": "harissa roasted cauliflower with houmous, pickled veg",
+    "category": "Salads",
+    "kal": "213",
+    "price": "18.50",
+    "image": "image1.png"
+  }
+]

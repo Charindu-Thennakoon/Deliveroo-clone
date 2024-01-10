@@ -1,0 +1,31 @@
+{
+  "restaurants": [
+    {
+      "id": 101,
+      "name": "Harissa Cauliflower salad",
+      "catogory": "Salads",
+      "Description": "lorem ipum",
+      "kal": "423",
+      "price": "123",
+      "photo": "https://example.com/burger.jpg"
+    },
+    {
+      "id": 102,
+      "name": "Harissa Cauliflower salad",
+      "catogory": "Salads",
+      "Description": "lorem ipum",
+      "kal": "423",
+      "price": "123",
+      "photo": "https://example.com/burger.jpg"
+    },
+    {
+      "id": 103,
+      "name": "Harissa Cauliflower salad",
+      "catogory": "Salads",
+      "Description": "lorem ipum",
+      "kal": "423",
+      "price": "123",
+      "photo": "https://example.com/burger.jpg"
+    }
+  ]
+}
