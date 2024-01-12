@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Box, Button, Typography, TextField } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
 
 const EmailAddress = ({ onSignUpClick }) => {
   const [email, setEmail] = useState("");
@@ -13,6 +14,7 @@ const EmailAddress = ({ onSignUpClick }) => {
   const [hideComponent, setHideComponent] = useState(false);
 
   const navigate = useNavigate();
+  const { setIsAuthenticated } = useAuth();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -30,23 +32,31 @@ const EmailAddress = ({ onSignUpClick }) => {
     if (email !== "cha@gmail.com") {
       setIsEmailValid(false);
       setShowSignUpButton(true);
-      setIsButtonActive(false); 
+      setIsButtonActive(false);
     } else {
       setIsPasswordVisible(true);
     }
   };
 
+  // const handleLogin = () => {
+  //   if (password !== "1234") {
+  //     setIsPasswordCorrect(false);
+  //   } else {
+  //     navigate("/menu");
+  //   }
+  // };
   const handleLogin = () => {
     if (password !== "1234") {
       setIsPasswordCorrect(false);
     } else {
-      navigate("/menue");
+      setIsAuthenticated(true);
+      navigate("/menu");
     }
   };
 
   const handleSignUpClick = () => {
-    setHideComponent(true); 
-    onSignUpClick(); 
+    setHideComponent(true);
+    onSignUpClick();
   };
 
   return (
